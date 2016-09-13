@@ -1,0 +1,11 @@
+package br.com.fiap.exemplo.ws;
+
+
+
+public class HelloWeb {
+	
+	public String hello(String nome) {
+		return "Olá " + nome;
+	}
+
+}
