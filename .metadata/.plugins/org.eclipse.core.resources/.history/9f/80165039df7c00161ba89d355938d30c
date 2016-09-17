@@ -1,0 +1,35 @@
+package com.fiap.exemplos.ws;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebService;
+
+@WebService
+public class AlunoWeb {
+	
+	public List<Aluno> alunos;
+	
+	public AlunoWeb() {
+		alunos = new ArrayList<>();
+	}
+	
+	@WebMethod
+	public String insert(@WebParam(name = "aluno") Aluno aluno) {
+		return "Aluno cadastrado com sucesso!";
+	}
+	
+	@WebMethod
+	public List<Aluno> listAlunos() {
+		return this.alunos;
+	}
+	
+	
+	@WebMethod
+	public String hello(String name) {
+		return "Hello " + name;
+	}
+
+}

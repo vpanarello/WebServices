@@ -2649,3 +2649,69 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.wst.server.discovery 1 0 2016-09-17 10:06:44.300
 !MESSAGE cacheFile=file:/D:/27SCJ/WebServices/.metadata/.plugins/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.eclipse.wst.common.project.facet.ui 4 0 2016-09-17 10:20:01.984
+!MESSAGE Project facet com.ibm.etools.javaee.cdi has not been defined. It is used in plugin com.ibm.etools.javaee.cdi.ext.ui.
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-17 10:24:06.964
+!MESSAGE GlassFish: Deploy direcotry D:\27SCJ\opensource\glassfish4\glassfish\domains\domain1\eclipseApps\Exemplo_03
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2016-09-17 10:57:14.602
+!MESSAGE Processor failure during reconcile
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.ws.internal.jaxws.core.annotations.validation.WebMethodCheckForWebServiceRule.process(WebMethodCheckForWebServiceRule.java:42)
+	at com.sun.mirror.apt.AnnotationProcessors$CompositeAnnotationProcessor.process(AnnotationProcessors.java:83)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.dispatchToFileBasedProcessor(APTDispatchRunnable.java:656)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.access$0(APTDispatchRunnable.java:626)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable$ReconcileEnvCallback.run(APTDispatchRunnable.java:78)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv$CallbackRequestor.acceptBinding(ReconcileEnv.java:135)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:949)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:588)
+	at org.eclipse.jdt.core.dom.ASTParser.createASTs(ASTParser.java:899)
+	at org.eclipse.jdt.apt.core.internal.env.BaseProcessorEnv.createASTs(BaseProcessorEnv.java:857)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv.openPipeline(ReconcileEnv.java:108)
+	at org.eclipse.jdt.apt.core.internal.env.AbstractCompilationEnv.newReconcileEnv(AbstractCompilationEnv.java:97)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.reconcile(APTDispatchRunnable.java:219)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.runAPTDuringReconcile(APTDispatchRunnable.java:167)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.reconcile(AptCompilationParticipant.java:213)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-17 11:01:32.305
+!MESSAGE GlassFish: Deploy direcotry D:\27SCJ\opensource\glassfish4\glassfish\domains\domain1\eclipseApps\Exemplo_03
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-17 11:04:41.606
+!MESSAGE GlassFish: Deploy direcotry D:\27SCJ\opensource\glassfish4\glassfish\domains\domain1\eclipseApps\Exemplo_03
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-17 11:32:18.919
+!MESSAGE GlassFish: Deploy direcotry D:\27SCJ\opensource\glassfish4\glassfish\domains\domain1\eclipseApps\Exemplo_03
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-17 11:34:49.094
+!MESSAGE GlassFish: Deploy direcotry D:\27SCJ\opensource\glassfish4\glassfish\domains\domain1\eclipseApps\Exemplo_03
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-09-17 11:47:46.202
+!MESSAGE Could not auto-share project Exemplo_04_clienteWs
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'Exemplo_04_clienteWs'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-09-17 11:47:46.202
+!MESSAGE Provided SVN information does not match that on disk for project 'Exemplo_04_clienteWs'.

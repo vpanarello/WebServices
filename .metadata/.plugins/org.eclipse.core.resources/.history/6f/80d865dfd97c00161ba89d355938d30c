@@ -1,0 +1,6 @@
+package com.fiap.exemplos.ws;
+
+@Webservice
+public class AlunoWeb {
+
+}

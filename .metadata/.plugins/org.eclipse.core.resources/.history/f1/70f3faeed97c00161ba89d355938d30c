@@ -1,0 +1,12 @@
+package com.fiap.exemplos.ws;
+
+import javax.jws.WebService;
+
+@WebService
+public class AlunoWeb {
+	
+	public String hello(String name) {
+		return "Hello " + name;
+	}
+
+}
