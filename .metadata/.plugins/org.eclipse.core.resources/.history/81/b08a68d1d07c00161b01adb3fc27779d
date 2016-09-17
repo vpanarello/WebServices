@@ -1,0 +1,30 @@
+package br.com.fiap.testes;
+
+import java.rmi.RemoteException;
+
+import br.com.fiap.exemplos.PrimeiroPortTypeProxy;
+import br.com.fiap.exemplos.xsd.Aluno;
+
+public class TesteClient {
+	
+	
+	static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		
+		aluno.setNome("Lonchas da Silva");
+		aluno.setMedia("10");
+		aluno.setTurma("EJB");
+
+		PrimeiroPortTypeProxy ws = new PrimeiroPortTypeProxy();
+		
+		try {
+			System.out.println(ws.novo(aluno));
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

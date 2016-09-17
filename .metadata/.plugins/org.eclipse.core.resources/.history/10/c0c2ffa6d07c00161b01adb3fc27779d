@@ -1,0 +1,10 @@
+package br.com.fiap.testes;
+
+import br.com.fiap.exemplos.xsd.Aluno;
+
+public class TesteClient {
+	
+	Aluno aluno = new Aluno();
+	
+
+}

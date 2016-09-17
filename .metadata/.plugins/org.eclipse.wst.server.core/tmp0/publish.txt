@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Mon Sep 12 23:04:24 BRT 2016
+#Sat Sep 17 09:23:55 BRT 2016
+org.eclipse.jst.jee.server\:Exemplo_02_client=C\:\\opensource\\tomcat8\\wtpwebapps\\Exemplo_02_client
 org.eclipse.jst.jee.server\:Exemplo_002=C\:\\opensource\\tomcat8\\wtpwebapps\\Exemplo_002
