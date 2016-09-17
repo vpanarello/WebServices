@@ -1,0 +1,19 @@
+package br.com.fiap.client.test;
+
+import br.com.fiap.client.Aluno;
+import br.com.fiap.client.AlunoWebService;
+
+public class TesteChamada {
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		aluno.setMedia("4.5");
+		aluno.setNome("Dunha da Silva");
+		aluno.setTurma("27SCJ");
+		
+		
+		AlunoWeb port = new AlunoWebService().getAlunoWebPort();
+		
+		
+	}
+
+}

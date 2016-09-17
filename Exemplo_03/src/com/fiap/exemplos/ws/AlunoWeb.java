@@ -18,7 +18,6 @@ import javax.xml.ws.handler.MessageContext;
 public class AlunoWeb {
 	
 	protected final String AUTH_FAILURE_MSG = "Falha de Autenticação";
-	
 	public List<Aluno> alunos;
 	
 	@Resource
