@@ -1,0 +1,13 @@
+package br.com.fiap.rs.exemplos.entity;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+// Notacao de bind, permite bean ser serializado como xml
+@XmlRootElement
+public class Aluno {
+	
+	private String nome;
+	private String turma;
+	private String media;
+
+}

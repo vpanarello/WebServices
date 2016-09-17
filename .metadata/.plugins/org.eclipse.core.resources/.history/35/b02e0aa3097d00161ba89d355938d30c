@@ -1,0 +1,9 @@
+package br.com.fiap.rs.exemplos;
+
+public class Aplicacao {
+	
+	public Aplicacao() {
+		
+	}
+
+}

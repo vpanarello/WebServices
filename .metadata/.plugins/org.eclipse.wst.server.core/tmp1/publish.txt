@@ -1,3 +1,4 @@
 #GlassFish 3
-#Sat Sep 17 14:05:45 BRT 2016
+#Sat Sep 17 16:40:47 BRT 2016
 org.eclipse.jst.jee.server\:Exemplo_03=D\:\\27SCJ\\opensource\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Exemplo_03
+org.eclipse.jst.jee.server\:Exemplo_05_Jersey=D\:\\27SCJ\\opensource\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Exemplo_05_Jersey

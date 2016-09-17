@@ -1,0 +1,8 @@
+package br.com.fiap.rs.exemplos;
+
+import javax.ws.rs.Path;
+
+@Path("alunos")
+public class AlunoWeb {
+
+}

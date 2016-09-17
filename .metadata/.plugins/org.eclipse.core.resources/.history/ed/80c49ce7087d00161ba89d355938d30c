@@ -1,0 +1,10 @@
+package br.com.fiap.rs.exemplos;
+
+
+@Path("exemplo")
+public class HelloWeb {
+	
+	public String hello() {
+		return "Olá, tudo bem?";
+	}
+}

@@ -1,0 +1,23 @@
+package br.com.fiap.rs.exemplos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.Path;
+
+import br.com.fiap.rs.exemplos.entity.Aluno;
+
+@Path("alunos")
+public class AlunoWeb {
+	
+	static private List<Aluno> alunos;
+	
+	static {
+		alunos = new ArrayList<Aluno>();
+		Aluno a = new Aluno();
+		a.setNome("Pablo Emilio Escobar Gaviria");
+		a.setTurma("27AJB");
+		a.setMedia(9,8);
+	}
+
+}

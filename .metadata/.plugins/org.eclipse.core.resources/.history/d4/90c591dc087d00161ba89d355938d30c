@@ -1,0 +1,9 @@
+package br.com.fiap.rs.exemplos;
+
+public class HelloWeb {
+	
+	public String hello() {
+		return "Olá, tudo bem?";
+	}
+
+}

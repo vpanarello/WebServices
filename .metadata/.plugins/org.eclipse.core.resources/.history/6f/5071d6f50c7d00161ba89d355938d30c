@@ -1,0 +1,6 @@
+package br.com.fiap.rs.exemplos.entity;
+
+@XmlRootElement
+public class Aluno {
+
+}

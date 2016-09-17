@@ -1,0 +1,14 @@
+package br.com.fiap.rs.exemplos;
+
+import java.util.List;
+
+import javax.ws.rs.Path;
+
+import br.com.fiap.rs.exemplos.entity.Aluno;
+
+@Path("alunos")
+public class AlunoWeb {
+	
+	static private List<Aluno> alunos;
+
+}
