@@ -1,0 +1,23 @@
+package br.com.fiap.client.testHeader;
+
+import br.com.fiap.clientHeader.Aluno;
+
+public class TesteChamada {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	private static void create() {
+		Aluno a = new Aluno();
+		a.setNome("Osmar Contato");
+		a.setTurma("27EJF");
+		a.setMedia("5");
+		
+		
+		
+		
+	}
+
+}

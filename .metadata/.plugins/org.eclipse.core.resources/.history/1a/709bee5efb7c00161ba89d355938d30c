@@ -1,0 +1,37 @@
+package br.com.fiap.client.testHeader;
+
+import br.com.fiap.clientHeader.AlunoWeb;
+import br.com.fiap.clientHeader.AlunoWebService;
+import br.com.fiap.clientHeader.Exception_Exception;
+import br.com.fiap.clientHeader.ListAlunos;
+import br.com.fiap.clientHeader.ListAlunosResponse;
+
+public class TesteChamadaLista {
+	
+	public static void main(String[] args) {
+		list();
+		
+	}
+	
+	private static void list() {
+
+		
+		AlunoWeb port =  new AlunoWebService().getAlunoWebPort();
+		
+		ListAlunos parametros = new ListAlunos();
+		
+
+	
+		ListAlunosResponse resposta = port.listAlunos(parametros, "vagner", "123");
+		
+		
+		try {
+			resposta = port.insert(parametros, "vagner", "123");
+		} catch (Exception_Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(resposta.getReturn());
+		
+	}
+
+}
