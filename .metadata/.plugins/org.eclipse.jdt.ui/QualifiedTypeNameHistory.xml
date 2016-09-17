@@ -3,4 +3,8 @@
 <fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
 <fullyQualifiedTypeName name="br.com.fiap.exemplo.ws.HelloWeb"/>
 <fullyQualifiedTypeName name="br.com.fiap.exemplo.ws.client.HelloWebService"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.fiap.exemplos.xsd.Aluno"/>
+<fullyQualifiedTypeName name="br.com.fiap.exemplos.PrimeiroPortTypeProxy"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
