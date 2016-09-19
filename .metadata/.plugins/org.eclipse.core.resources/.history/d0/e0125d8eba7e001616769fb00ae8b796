@@ -31,7 +31,7 @@ public class AlunoWeb {
 	
 	@GET
 	// modifique "mediatype" para escolher formato de resposta
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Aluno> getAlunos() {
 		return AlunoWeb.alunos;
 	}
@@ -72,7 +72,6 @@ public class AlunoWeb {
 		alunos.set(index, aluno);
 		Retorno r = new Retorno();
 		r.setMensagem("Aluno atualizado com sucesso!");
-		return r;
 	}
 
 }

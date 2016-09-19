@@ -1,0 +1,11 @@
+package br.com.fiap.rs.exemplos;
+
+public class Retorno {
+	
+	private String mensagem;
+	
+	public String getMensagem() {
+		return mensagem;
+	}
+
+}

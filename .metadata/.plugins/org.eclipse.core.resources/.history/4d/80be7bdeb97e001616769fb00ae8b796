@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
-import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -31,13 +29,13 @@ public class AlunoWeb {
 	
 	@GET
 	// modifique "mediatype" para escolher formato de resposta
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Aluno> getAlunos() {
 		return AlunoWeb.alunos;
 	}
 	
-	@GET
 	@Path("{index}")
+	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	public Aluno getAluno(@PathParam("index") int index){
 		return alunos.get(index);
@@ -53,26 +51,12 @@ public class AlunoWeb {
 		return r;
 	}
 	
-	@DELETE
-	@Path("{index}")
-	@Produces(MediaType.APPLICATION_XML)
-	public Retorno remover(@PathParam("index") int index) {
+	public Retorno remover(int index) {
 		alunos.remove(index);
 		Retorno r = new Retorno();
 		r.setMensagem("Aluno removido com sucesso!");
 		return r;
 		
-	}
-	
-	@PUT
-	@Path("{index}")
-	@Produces(MediaType.APPLICATION_XML)
-	@Consumes(MediaType.APPLICATION_XML)
-	public Retorno atualizar(Aluno aluno, @PathParam("index") int index) {
-		alunos.set(index, aluno);
-		Retorno r = new Retorno();
-		r.setMensagem("Aluno atualizado com sucesso!");
-		return r;
 	}
 
 }

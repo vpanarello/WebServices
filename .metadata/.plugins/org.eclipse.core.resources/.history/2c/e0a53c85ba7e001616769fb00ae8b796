@@ -31,7 +31,7 @@ public class AlunoWeb {
 	
 	@GET
 	// modifique "mediatype" para escolher formato de resposta
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Aluno> getAlunos() {
 		return AlunoWeb.alunos;
 	}
@@ -69,10 +69,9 @@ public class AlunoWeb {
 	@Produces(MediaType.APPLICATION_XML)
 	@Consumes(MediaType.APPLICATION_XML)
 	public Retorno atualizar(Aluno aluno, @PathParam("index") int index) {
-		alunos.set(index, aluno);
+		aluno.set(index, a);
 		Retorno r = new Retorno();
 		r.setMensagem("Aluno atualizado com sucesso!");
-		return r;
 	}
 
 }
