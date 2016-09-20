@@ -41,9 +41,4 @@ public class Aluno {
 	public void setTurma(String turma) {
 		this.turma = turma;
 	}
-	@Override
-	public String toString() {
-		return "Aluno [media=" + media + ", nome=" + nome + ", turma=" + turma + "]";
-	}
-	
 }

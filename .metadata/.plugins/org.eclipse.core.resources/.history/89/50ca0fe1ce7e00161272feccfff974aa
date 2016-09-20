@@ -21,8 +21,13 @@ public class TesteChamadaLista {
 		Alunos alunos = response.readEntity(Alunos.class);
 		
 		for (Aluno a : alunos.getAlunos()) {
-			System.out.println(a.toString());
-
+			System.out.println(a.getNome());
+			System.out.println(a.getTurma());
+			System.out.println(a.getMedia());
+			System.out.println("");
 		}
+		
+		
 	}
+
 }

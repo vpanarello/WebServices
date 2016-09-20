@@ -7,22 +7,22 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-public class TesteChamadaLista {
+public class TesteChamadaGet {
 	
 	public static void main(String[] args) {
 		Client client = ClientBuilder.newClient();
 		WebTarget webTarget = 
-				client.target("http://10.10.35.31:8080/ExemploJersey").path("alunos");
+				client.target("http://10.10.35.31:8080/ExemploJersey").path("alunos").path("1");
 		
 		Builder invocationBuilder = webTarget.request(MediaType.APPLICATION_XML);
-		
 		Response response = invocationBuilder.get();
+		Aluno aluno = response.readEntity(Aluno.class);
 		
-		Alunos alunos = response.readEntity(Alunos.class);
+		System.out.println("Nome: " + aluno.toString());
 		
-		for (Aluno a : alunos.getAlunos()) {
-			System.out.println(a.toString());
 
-		}
+		
+		
 	}
+
 }

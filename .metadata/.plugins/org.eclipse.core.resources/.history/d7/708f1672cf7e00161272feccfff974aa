@@ -7,7 +7,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-public class TesteChamadaLista {
+public class TesteChamadaListaa {
 	
 	public static void main(String[] args) {
 		Client client = ClientBuilder.newClient();
@@ -21,8 +21,13 @@ public class TesteChamadaLista {
 		Alunos alunos = response.readEntity(Alunos.class);
 		
 		for (Aluno a : alunos.getAlunos()) {
-			System.out.println(a.toString());
-
+			System.out.print(a.getNome() + " - ");
+			System.out.print(a.getTurma()+ " - ");
+			System.out.println(a.getMedia());
+//			System.out.println("");
 		}
+		
+		
 	}
+
 }
