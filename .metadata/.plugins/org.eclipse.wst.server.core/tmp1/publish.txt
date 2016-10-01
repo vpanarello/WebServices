@@ -1,0 +1,3 @@
+#GlassFish 3
+#Sat Oct 01 09:51:01 BRT 2016
+org.eclipse.jst.jee.server\:Exemplo_06_WSArquivos=D\:\\27SCJ\\opensource\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Exemplo_06_WSArquivos

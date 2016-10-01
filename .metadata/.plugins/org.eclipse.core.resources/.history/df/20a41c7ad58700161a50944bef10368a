@@ -1,0 +1,31 @@
+package com.fiap.ws.exemplos;
+
+import java.io.BufferedOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService(targetNamespace = "http://exemplos.ws.fiap.com/", portName = "ArquivoPort", serviceName = "ArquivoService")
+public class Arquivo {
+	
+	@WebMethod
+	public void upload(String fileName, byte[] imageByte) throws IOException {
+		
+		String filePath = "D:/Temp/Upload/" +fileName;
+		
+		FileOutputStream fos = new FileOutputStream(filePath);
+		BufferedOutputStream ostream = new BufferedOutputStream(fos);
+		ostream.write(imageByte);
+		ostream.close();
+	}
+	
+	public byte[] download(String fileName) {
+		String fileName = "D:/Temp/Download/" + fileName;
+		
+		
+	}
+
+}
