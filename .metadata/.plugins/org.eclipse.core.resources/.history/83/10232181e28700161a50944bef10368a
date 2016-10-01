@@ -1,0 +1,25 @@
+<service name="Ola" >
+	<Description>
+		Meu Serviço
+	</Description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	
+	<!-- Implementados para seguranca adicional -->
+	<parameter name="InflowSecurity">
+		<action>
+			<items>Timestamp</item>
+		</action>
+	</parameter>
+	<parameter name="OutflowSecurity">
+		<action>
+			<items>Timestamp</item>
+		</action>
+	</parameter>
+	
+	
+	<parameter name="ServiceClass" locked="false">com.fiap.exemplo.Ola</parameter>
+	
+</service>

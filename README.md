@@ -12,6 +12,10 @@ Gerando WebServices somente com o compilador do JDK
 
 - D:\27SCJ\WebServices\Exemplo_04_clienteWs\src>wsimport -keep -p br.com.fiap.client http://l2901micro15:8080/Exemplo_03/AlunoWebService?wsdl
 
+### Comandos aula_04
+
+- D:\27SCJ\WebServices\Exemplo_07_AnexoClient\src> keytool -genkey -keyalg RSA -keystore minhachave.jks -alias vagner
+
 
 ### Notas Servidor GlassFish:
 

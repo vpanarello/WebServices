@@ -1,0 +1,33 @@
+package br.com.fiap.client.app;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+
+import br.com.fiap.client.Arquivo;
+import br.com.fiap.client.ArquivoService;
+
+public class TestClient {
+	
+	public static void main(String[] args) {
+		
+		ArquivoService service = new ArquivoService();
+		Arquivo port = service.getArquivoPort();
+		
+		String fileName = "ryu.png";
+		String filePath = "D:/Temp/" + fileName;
+		
+		File file = new File(filePath);
+		
+		FileInputStream fis = new FileInputStream(file);
+		BufferedInputStream iStream = new BufferedInputStream(fis);
+		byte[] imageBytes = new byte[(int) file.length()];
+		
+		iStream.read(imageBytes);
+		iStream.close();
+		
+		
+		
+	}
+
+}

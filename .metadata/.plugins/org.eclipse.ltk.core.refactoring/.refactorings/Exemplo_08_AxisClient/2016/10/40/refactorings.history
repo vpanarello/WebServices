@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;security.properties&apos; to &apos;Ola&apos;&#x0D;&#x0A;- Original project: &apos;Exemplo_08_AxisClient&apos;&#x0D;&#x0A;- Destination element: &apos;Ola&apos;&#x0D;&#x0A;- Original element: &apos;security.properties&apos;" description="Copy file" element1="src/security.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1475335654105" target="/Exemplo_08_AxisSec/WebContent/WEB-INF/services/Ola" units="0" version="1.0"/>
+</session>
